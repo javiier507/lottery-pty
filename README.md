@@ -2,7 +2,14 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+First, add the environment variable:
+
+`.env.local`
+```bash
+API_URL=http://example.com
+```
+
+Second, run the development server:
 
 ```bash
 npm run dev
