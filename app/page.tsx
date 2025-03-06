@@ -1,8 +1,7 @@
 export default function Home() {
 	return (
 		<>
-			<section className="relative bg-blue-600 text-white py-20">
-				<div className="absolute inset-0 bg-black opacity-50"></div>
+			<section className="bg-justblue text-white py-20">
 				<div className="container mx-auto text-center relative z-10">
 					<h1 className="text-5xl font-bold mb-4">Lotería Pty</h1>
 					<p className="text-xl mb-8">
@@ -10,7 +9,7 @@ export default function Home() {
 					</p>
 					<a
 						href="#section1"
-						className="bg-white text-blue-600 py-2 px-6 rounded-full text-lg"
+						className="bg-white text-justblue py-2 px-6 rounded-full text-lg"
 					>
 						Descargar App
 					</a>
