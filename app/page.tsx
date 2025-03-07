@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Home() {
 	return (
 		<>
@@ -21,13 +23,33 @@ export default function Home() {
 					<h2 className="text-3xl font-semibold text-gray-800 mb-4">
 						¿Como funciona?
 					</h2>
-					<p className="text-lg text-gray-600">
+					<p className="text-lg text-gray-600 mb-2">
 						Visualiza todos los sorteos jugados ordenados por fecha.
 					</p>
-					<p className="text-lg text-gray-600">
+					<p className="text-lg text-gray-600 mb-8">
 						Activa las notificaciones para recibir alertas de cuanto se publique
 						un nuevo sorteo de lotería.
 					</p>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+						<div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/img/1.jpg" 
+								alt="Sorteos" 
+								width={500} 
+								height={500}
+								className="w-full h-auto object-cover"
+							/>
+						</div>
+						<div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/img/7.jpg" 
+								alt="Ganador" 
+								width={500} 
+								height={500}
+								className="w-full h-auto object-cover"
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -36,13 +58,33 @@ export default function Home() {
 					<h2 className="text-3xl font-semibold text-gray-800 mb-4">
 						¡Entérate si ganaste!
 					</h2>
-					<p className="text-lg text-gray-600">
+					<p className="text-lg text-gray-600 mb-2">
 						Guardas tus billetes y chances de lotería y cuando se publique un
 						nuevo sorteo, te avisaremos si fuiste unos de los ganadores.
 					</p>
-					<p className="text-lg text-gray-600">
+					<p className="text-lg text-gray-600 mb-8">
 						Te diremos en que premio y con cuantas fracciones ganaste.
 					</p>
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+						<div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/img/5.jpg" 
+								alt="Resultados" 
+								width={500} 
+								height={500}
+								className="w-full h-auto object-cover"
+							/>
+						</div>
+						<div className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+							<Image 
+								src="/img/3.jpg"
+								alt="Notificaciones" 
+								width={500} 
+								height={500}
+								className="w-full h-auto object-cover"
+							/>
+						</div>
+					</div>
 				</div>
 			</section>
 
