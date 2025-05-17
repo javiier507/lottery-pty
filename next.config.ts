@@ -6,15 +6,15 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
-        source: "/api/health-check",
+        source: "/lorem/api/health-check",
         destination: `${API_URL}/api/health-check`,
       },
       {
-        source: "/api/public/lotteries",
+        source: "/lorem/api/public/lotteries",
         destination: `${API_URL}/api/public/lotteries`,
       },
       {
-        source: "/api/public/devices",
+        source: "/lorem/api/public/devices",
         destination: `${API_URL}/api/public/devices`,
       },
     ];
