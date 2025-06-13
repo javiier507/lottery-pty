@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
 	return (
 		<>
-			<section className="bg-justblue text-white py-20">
+			<section className="bg-justblue text-white py-12">
 				<div className="container mx-auto text-center relative z-10">
 					<h1 className="text-5xl font-bold mb-4">Lotería Pty</h1>
 					<h2 className="text-xl mb-8">
@@ -12,9 +12,18 @@ export default function Home() {
 					<a
 						href="https://play.google.com/store/apps/details?id=com.penalbar06.loteriaapp&pcampaignid=web_share"
 						target="_blank"
-						className="bg-white text-justblue py-2 px-6 rounded-full text-lg"
+						rel="noopener noreferrer"
+						className="inline-block mt-4"
+						style={{ minHeight: 40 }}
 					>
-						Descargar App
+						<Image
+							src="/img/google-play-button.png"
+							alt="Descargar en Google Play"
+							width={270}
+							height={80}
+							style={{ display: 'block', height: 'auto', maxWidth: '100%' }}
+							priority
+						/>
 					</a>
 				</div>
 			</section>
