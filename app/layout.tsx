@@ -13,10 +13,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-	title: "Lotería Pty",
+	title: "Lotería de Panamá",
 	description: "Resultados de la Lotería Nacional de Panamá",
 	openGraph: {
-		title: "Lotería Pty",
+		title: "Lotería de Panamá",
 		description: "Resultados de la Lotería Nacional de Panamá",
 		type: "website",
 		url: "https://lottery-pty.vercel.app",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 				url: "/img/lottery-product.png",
 				width: 1200,
 				height: 630,
-				alt: "Lotería Pty - Resultados de la Lotería Nacional de Panamá"
+				alt: "Lotería de Panamá - Resultados de la Lotería Nacional de Panamá"
 			}
 		]
 	}

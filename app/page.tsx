@@ -5,7 +5,7 @@ export default function Home() {
 		<>
 			<section className="bg-justblue text-white py-12">
 				<div className="container mx-auto text-center relative z-10">
-					<h1 className="text-5xl font-bold mb-4">Lotería Pty</h1>
+					<h1 className="text-5xl font-bold mb-4">Lotería de Panamá</h1>
 					<h2 className="text-xl mb-8">
 						Obten al instante los resultados de la Lotería Nacional de Panamá.
 					</h2>
