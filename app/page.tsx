@@ -10,7 +10,8 @@ export default function Home() {
 						Obten al instante los resultados de la lotería de Panamá.
 					</p>
 					<a
-						href="#section1"
+						href="https://play.google.com/store/apps/details?id=com.penalbar06.loteriaapp&pcampaignid=web_share"
+						target="_blank"
 						className="bg-white text-justblue py-2 px-6 rounded-full text-lg"
 					>
 						Descargar App
