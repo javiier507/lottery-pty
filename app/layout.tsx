@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 		url: "https://lottery-pty.vercel.app",
 		images: [
 			{
-				url: "/open-graph-image.png",
+				url: "/img/lottery-product.png",
 				width: 1200,
 				height: 630,
 				alt: "Lotería Pty - Resultados de la Lotería Nacional de Panamá"
