@@ -6,9 +6,9 @@ export default function Home() {
 			<section className="bg-justblue text-white py-20">
 				<div className="container mx-auto text-center relative z-10">
 					<h1 className="text-5xl font-bold mb-4">Lotería Pty</h1>
-					<p className="text-xl mb-8">
-						Obten al instante los resultados de la lotería de Panamá.
-					</p>
+					<h2 className="text-xl mb-8">
+						Obten al instante los resultados de la Lotería Nacional de Panamá.
+					</h2>
 					<a
 						href="https://play.google.com/store/apps/details?id=com.penalbar06.loteriaapp&pcampaignid=web_share"
 						target="_blank"
