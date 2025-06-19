@@ -3,7 +3,14 @@ import Image from 'next/image'
 export default function Home() {
 	return (
 		<>
-			<section className="bg-justblue text-white py-12">
+			<section className="w-full bg-yellow-100 text-yellow-900 text-center py-2 px-4 text-sm">
+				<span>
+					Esta aplicación es independiente y no está afiliada a la Lotería Nacional de Beneficencia de Panamá. 
+					<a href="#section4" className="underline font-medium hover:text-yellow-700 ml-1">Ver más</a>
+				</span>
+			</section>
+
+			<section className="bg-justblue text-white py-10">
 				<div className="container mx-auto text-center relative z-10">
 					<h1 className="text-5xl font-bold mb-4">Lotería de Panamá</h1>
 					<h2 className="text-xl mb-8">
@@ -104,6 +111,23 @@ export default function Home() {
 					<p className="text-lg text-gray-600">
 						Solo tenemos recopilados los resultados de lotería desde el 17 de
 						noviembre del 2024.
+					</p>
+				</div>
+			</section>
+
+			<section id="section4" className="py-16 bg-gray-100 text-center">
+				<div className="container mx-auto px-4 max-w-3xl">
+					<h2 className="text-2xl font-semibold text-gray-800 mb-4">
+						Renuncia de Responsabilidad y Fuente de Datos
+					</h2>
+					<p className="text-base text-gray-700 mb-2">
+						Esta aplicación es un proyecto personal e independiente y no tiene ninguna afiliación, asociación, autorización o respaldo por parte de la Lotería Nacional de Beneficencia de Panamá ni de ninguna otra entidad gubernamental de Panamá.
+					</p>
+					<p className="text-base text-gray-700 mb-2">
+						La aplicación "Resultados Lotería Panamá" se ha desarrollado con el objetivo de ofrecer una herramienta conveniente para consultar los resultados de los sorteos.
+					</p>
+					<p className="text-base text-gray-700 mb-2">
+						<span className="font-semibold">Fuente de la Información:</span> Los resultados mostrados en esta aplicación se obtienen de fuentes públicas y oficiales, principalmente del sitio web oficial de la Lotería Nacional de Beneficencia de Panamá y de medios de comunicación locales. Siempre se recomienda verificar los resultados con las fuentes oficiales antes de tomar cualquier decisión. La información oficial se puede consultar en: <a href="https://www.lnb.gob.pa/" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">https://www.lnb.gob.pa/</a>
 					</p>
 				</div>
 			</section>
