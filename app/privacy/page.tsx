@@ -66,6 +66,9 @@ export default function PrivacyPage() {
           <p>Si tienes alguna pregunta sobre esta Política de Privacidad, puedes contactarnos a través de: <a href="https://lottery-pty.vercel.app/" className="text-blue-700 underline" target="_blank" rel="noopener noreferrer">https://lottery-pty.vercel.app/</a></p>
         </div>
       </div>
+      <div className="mt-10 flex justify-center">
+        <a href="/" className="inline-block px-4 py-2 bg-blue-700 text-white rounded-full font-medium hover:bg-blue-800 transition">← Volver a la página de inicio</a>
+      </div>
     </main>
   );
 }
