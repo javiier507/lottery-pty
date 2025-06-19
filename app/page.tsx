@@ -129,7 +129,7 @@ export default function Home() {
                         La aplicación "Resultados Lotería Panamá" se ha desarrollado con el objetivo de ofrecer una herramienta conveniente para consultar los resultados de los sorteos.
                     </p>
                     <p className="text-base text-gray-700 mb-2">
-                        <span className="font-semibold">Fuente de la Información:</span> Los resultados mostrados en esta aplicación se obtienen de fuentes públicas y oficiales, principalmente del sitio web oficial de la Lotería Nacional de Beneficencia de Panamá y de medios de comunicación locales. Siempre se recomienda verificar los resultados con las fuentes oficiales antes de tomar cualquier decisión. La información oficial se puede consultar en: <a href="https://www.instagram.com/lnbpma/?hl=es-la" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">Instagram Oficial de la LNB</a>
+                        <span className="font-semibold">Fuente de la Información:</span> Los resultados mostrados en esta aplicación se obtienen de fuentes públicas y oficiales, principalmente del sitio web oficial de la Lotería Nacional de Beneficencia de Panamá y de medios de comunicación locales. Siempre se recomienda verificar los resultados con las fuentes oficiales antes de tomar cualquier decisión.
                     </p>
                 </div>
             </section>
