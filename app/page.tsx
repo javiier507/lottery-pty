@@ -7,6 +7,8 @@ export default function Home() {
 				<span>
 					Esta aplicación es independiente y no está afiliada a la Lotería Nacional de Beneficencia de Panamá. 
 					<a href="#section4" className="underline font-medium hover:text-yellow-700 ml-1">Ver más</a>
+					<span className="mx-2">|</span>
+					<a href="/privacy" className="underline font-medium hover:text-blue-700 ml-1">Política de Privacidad</a>
 				</span>
 			</section>
 
