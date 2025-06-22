@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function Home() {
     return (
         <>
-            <section className="w-full bg-yellow-100 text-yellow-900 text-center py-2 px-4 text-sm">
+            <section className="w-full bg-yellow-100 text-yellow-900 text-center py-2 px-4 text-base">
                 <span>
                     Esta aplicación es independiente y no está afiliada a la Lotería Nacional de Beneficencia de Panamá. 
                     <a href="#section4" className="underline font-medium hover:text-yellow-700 ml-1">Ver más</a>
