@@ -1,10 +1,10 @@
 export default function PrivacyPage() {
   return (
     <main className="max-w-3xl mx-auto py-16 px-4">
-      <h1 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Política de Privacidad para Lotería de Panamá</h1>
+      <h1 className="text-2xl font-semibold text-gray-800 mb-4 text-center">Política de Privacidad para Lotería Pty</h1>
       <p className="text-sm text-gray-500 mb-6 text-center">Última actualización: 18 de junio de 2025</p>
       <p className="text-base text-gray-700 mb-4 text-center">
-        Esta Política de Privacidad describe cómo Lotería de Panamá (en adelante, "la Aplicación") maneja la información del usuario. Tu privacidad es importante para nosotros y estamos comprometidos a protegerla.
+        Esta Política de Privacidad describe cómo Lotería Pty (en adelante, "la Aplicación") maneja la información del usuario. Tu privacidad es importante para nosotros y estamos comprometidos a protegerla.
       </p>
       <div className="text-base text-gray-700 space-y-4">
         <div>

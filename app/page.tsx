@@ -14,9 +14,9 @@ export default function Home() {
 
             <section className="bg-justblue text-white py-10">
                 <div className="container mx-auto text-center relative z-10">
-                    <h1 className="text-5xl font-bold mb-4">Lotería de Panamá</h1>
+                    <h1 className="text-5xl font-bold mb-4">Lotería Pty</h1>
                     <h2 className="text-xl mb-8">
-                        Obten al instante los resultados de la Lotería Nacional de Panamá.
+                        Obten al instante los resultados de la Lotería en Panamá.
                     </h2>
                     <a
                         href="https://play.google.com/store/apps/details?id=com.penalbar06.loteriaapp&pcampaignid=web_share"
@@ -126,10 +126,13 @@ export default function Home() {
                         Esta aplicación es un proyecto personal e independiente y no tiene ninguna afiliación, asociación, autorización o respaldo por parte de la Lotería Nacional de Beneficencia de Panamá ni de ninguna otra entidad gubernamental de Panamá.
                     </p>
                     <p className="text-base text-gray-700 mb-2">
-                        La aplicación "Resultados Lotería Panamá" se ha desarrollado con el objetivo de ofrecer una herramienta conveniente para consultar los resultados de los sorteos.
+                        La aplicación "Lotería Pty" se ha desarrollado con el objetivo de ofrecer una herramienta conveniente para consultar los resultados de los sorteos.
                     </p>
                     <p className="text-base text-gray-700 mb-2">
-                        <span className="font-semibold">Fuente de la Información:</span> Los resultados mostrados en esta aplicación se obtienen de fuentes públicas y oficiales, principalmente del sitio web oficial de la Lotería Nacional de Beneficencia de Panamá y de medios de comunicación locales. Siempre se recomienda verificar los resultados con las fuentes oficiales antes de tomar cualquier decisión.
+                        <span className="font-semibold">Fuente de la Información:</span> Los resultados mostrados en esta aplicación se obtienen de fuentes públicas y oficiales, principalmente del sitio web oficial de la Lotería Nacional de Beneficencia de Panamá y de medios de comunicación locales. Siempre se recomienda verificar los resultados con las fuentes oficiales antes de tomar cualquier decisión. La información oficial se puede consultar en: <a href="http://www.lnb.gob.pa/" target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">https://www.lnb.gob.pa/</a>
+                    </p>
+                    <p className="text-base text-gray-700 mt-4 italic">
+                        Desafortunadamente, el sitio web oficial adjunto experimenta inestabilidad técnica y periodos en los que se encuentra fuera de servicio. Esto se escapa de nuestro control como desarrolladores. Precisamente esta es la razón por la que hemos decidido desarrollar esta aplicación.
                     </p>
                 </div>
             </section>
