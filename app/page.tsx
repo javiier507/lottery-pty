@@ -120,11 +120,9 @@ export default function Home() {
             <section id="section3-5" className="py-20 bg-gray-50 text-center">
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-                        Las combinaciones mas ganadoras
+                        Las combinaciones más ganadoras
                     </h2>
-                    <h3 className="text-2xl font-semibold text-gray-700 mb-4">
-                        2 digitos
-                    </h3>
+                    
                     <div className="overflow-x-auto">
                         <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto">
                             <thead className="bg-gray-200 text-gray-700">
@@ -177,63 +175,9 @@ export default function Home() {
                             </tbody>
                         </table>
                     </div>
-                    <h3 className="text-2xl font-semibold text-gray-700 mb-4 mt-8">
-                        3 digitos
-                    </h3>
-                    <div className="overflow-x-auto">
-                        <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto">
-                            <thead className="bg-gray-200 text-gray-700">
-                                <tr>
-                                    <th className="py-3 px-4 uppercase font-semibold text-sm">Combinación</th>
-                                    <th className="py-3 px-4 uppercase font-semibold text-sm">Veces</th>
-                                </tr>
-                            </thead>
-                            <tbody className="text-gray-700">
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">001</td>
-                                    <td className="py-3 px-4">15</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">123</td>
-                                    <td className="py-3 px-4">14</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">456</td>
-                                    <td className="py-3 px-4">13</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">789</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">987</td>
-                                    <td className="py-3 px-4">11</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">654</td>
-                                    <td className="py-3 px-4">10</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">321</td>
-                                    <td className="py-3 px-4">9</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">111</td>
-                                    <td className="py-3 px-4">8</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">222</td>
-                                    <td className="py-3 px-4">7</td>
-                                </tr>
-                                <tr>
-                                    <td className="py-3 px-4">333</td>
-                                    <td className="py-3 px-4">6</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                    
                     <p className="text-lg text-gray-600 mt-8">
-                        Datos actualizados hasta el 7 de Julio del 2025
+                        Datos analizados con herramientas de Inteligencia Artificial hasta el 7 de julio del 2025
                     </p>
                 </div>
             </section>
