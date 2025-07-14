@@ -133,51 +133,59 @@ export default function Home() {
                             </thead>
                             <tbody className="text-gray-700">
                                 <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">01</td>
-                                    <td className="py-3 px-4">150</td>
+                                    <td className="py-3 px-4">51</td>
+                                    <td className="py-3 px-4">15</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">23</td>
-                                    <td className="py-3 px-4">145</td>
+                                    <td className="py-3 px-4">14</td>
+                                    <td className="py-3 px-4">13</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">45</td>
-                                    <td className="py-3 px-4">140</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">67</td>
-                                    <td className="py-3 px-4">135</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">89</td>
-                                    <td className="py-3 px-4">130</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">48</td>
                                     <td className="py-3 px-4">12</td>
-                                    <td className="py-3 px-4">125</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">34</td>
-                                    <td className="py-3 px-4">120</td>
+                                    <td className="py-3 px-4">87</td>
+                                    <td className="py-3 px-4">12</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">56</td>
-                                    <td className="py-3 px-4">115</td>
+                                    <td className="py-3 px-4">55</td>
+                                    <td className="py-3 px-4">12</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">75</td>
+                                    <td className="py-3 px-4">12</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">83</td>
+                                    <td className="py-3 px-4">12</td>
                                 </tr>
                                 <tr className="border-b border-gray-200">
                                     <td className="py-3 px-4">78</td>
-                                    <td className="py-3 px-4">110</td>
+                                    <td className="py-3 px-4">11</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">95</td>
+                                    <td className="py-3 px-4">10</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">91</td>
+                                    <td className="py-3 px-4">10</td>
+                                </tr>
+                                <tr className="border-b border-gray-200">
+                                    <td className="py-3 px-4">79</td>
+                                    <td className="py-3 px-4">10</td>
                                 </tr>
                                 <tr>
-                                    <td className="py-3 px-4">90</td>
-                                    <td className="py-3 px-4">105</td>
+                                    <td className="py-3 px-4">59</td>
+                                    <td className="py-3 px-4">10</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                     
                     <p className="text-lg text-gray-600 mt-8">
-                        Datos analizados con herramientas de Inteligencia Artificial hasta el 7 de julio del 2025
+                        Datos analizados hasta el 13 de Julio del 2025.
                     </p>
                 </div>
             </section>
