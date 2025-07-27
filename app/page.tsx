@@ -1,6 +1,15 @@
 import Image from 'next/image'
 
-export default function Home() {
+import { getLotteryAnalysisData } from '@/lib/redis'
+import { formatDate } from '@/lib/date'
+
+export const revalidate = 43200; // 12 hours
+export const dynamic = 'force-static';
+export const fetchCache = 'force-cache';
+
+export default async function Home() {
+    const lotteryData = await getLotteryAnalysisData()
+
     return (
         <>
             <section className="w-full bg-yellow-100 text-yellow-900 text-center py-2 px-4 text-base">
@@ -117,78 +126,38 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="section3-5" className="py-20 bg-gray-50 text-center">
-                <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-semibold text-gray-800 mb-4">
-                        Las combinaciones más ganadoras
-                    </h2>
-                    
-                    <div className="overflow-x-auto">
-                        <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto">
-                            <thead className="bg-gray-200 text-gray-700">
-                                <tr>
-                                    <th className="py-3 px-4 uppercase font-semibold text-sm">Combinación</th>
-                                    <th className="py-3 px-4 uppercase font-semibold text-sm">Veces</th>
-                                </tr>
-                            </thead>
-                            <tbody className="text-gray-700">
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">51</td>
-                                    <td className="py-3 px-4">15</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">14</td>
-                                    <td className="py-3 px-4">13</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">48</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">87</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">55</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">75</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">83</td>
-                                    <td className="py-3 px-4">12</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">78</td>
-                                    <td className="py-3 px-4">11</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">95</td>
-                                    <td className="py-3 px-4">10</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">91</td>
-                                    <td className="py-3 px-4">10</td>
-                                </tr>
-                                <tr className="border-b border-gray-200">
-                                    <td className="py-3 px-4">79</td>
-                                    <td className="py-3 px-4">10</td>
-                                </tr>
-                                <tr>
-                                    <td className="py-3 px-4">59</td>
-                                    <td className="py-3 px-4">10</td>
-                                </tr>
-                            </tbody>
-                        </table>
+            {lotteryData ? (
+                <section id="section3-5" className="py-20 bg-gray-50 text-center">
+                    <div className="container mx-auto px-4">
+                        <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+                            Las combinaciones más ganadoras
+                        </h2>
+                        
+                        <div className="overflow-x-auto">
+                            <table className="min-w-full bg-white shadow-md rounded-lg overflow-hidden mx-auto">
+                                <thead className="bg-gray-200 text-gray-700">
+                                    <tr>
+                                        <th className="py-3 px-4 uppercase font-semibold text-sm">Combinación</th>
+                                        <th className="py-3 px-4 uppercase font-semibold text-sm">Veces</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-gray-700">
+                                    {lotteryData.frequent_combinations.slice(0, 10).map((item, index) => (
+                                        <tr key={index} className="border-b border-gray-200">
+                                            <td className="py-3 px-4">{item.combination}</td>
+                                            <td className="py-3 px-4">{item.frequency}</td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <p className="text-lg text-gray-600 mt-8">
+                            Datos analizados hasta el {formatDate(lotteryData.last_updated)}.
+                        </p>
                     </div>
-                    
-                    <p className="text-lg text-gray-600 mt-8">
-                        Datos analizados hasta el 13 de Julio del 2025.
-                    </p>
-                </div>
-            </section>
+                </section>
+            ): null}
 
             <section id="section4" className="py-16 bg-white text-center">
                 <div className="container mx-auto px-4 max-w-3xl">

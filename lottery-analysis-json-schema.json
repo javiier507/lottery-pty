@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Generated schema for Root",
+    "type": "object",
+    "properties": {
+        "frequent_combinations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "combination": {
+                        "type": "string"
+                    },
+                    "frequency": {
+                        "type": "number"
+                    }
+                },
+                "required": [
+                    "combination",
+                    "frequency"
+                ]
+            }
+        },
+        "total_combinations_analyzed": {
+            "type": "number"
+        },
+        "unique_combinations": {
+            "type": "number"
+        },
+        "frequent_combinations_count": {
+            "type": "number"
+        },
+        "data_source": {
+            "type": "string"
+        },
+        "total_records": {
+            "type": "number"
+        },
+        "frequency_threshold": {
+            "type": "number"
+        },
+        "last_updated": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "frequent_combinations",
+        "total_combinations_analyzed",
+        "unique_combinations",
+        "frequent_combinations_count",
+        "data_source",
+        "total_records",
+        "frequency_threshold",
+        "last_updated"
+    ]
+}
