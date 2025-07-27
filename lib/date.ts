@@ -6,14 +6,12 @@
 export function formatDate(dateString: string): string {
     try {
         const date = new Date(dateString)
+        const localDate = new Date(date.getTime() - (date.getTimezoneOffset() * 60000))
         return new Intl.DateTimeFormat('es-PA', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            /* hour: '2-digit',
-            minute: '2-digit',
-            timeZone: 'America/Panama' */
-        }).format(date)
+            dateStyle: 'long',
+            timeStyle: 'short'
+        }).format(localDate)
+        
     } catch (error) {
         console.error('Error formatting date:', error)
         return dateString // Fallback to original string if parsing fails

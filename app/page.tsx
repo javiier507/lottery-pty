@@ -142,7 +142,7 @@ export default async function Home() {
                                     </tr>
                                 </thead>
                                 <tbody className="text-gray-700">
-                                    {lotteryData.frequent_combinations.slice(0, 10).map((item, index) => (
+                                    {lotteryData.frequent_combinations.map((item, index) => (
                                         <tr key={index} className="border-b border-gray-200">
                                             <td className="py-3 px-4">{item.combination}</td>
                                             <td className="py-3 px-4">{item.frequency}</td>
