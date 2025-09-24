@@ -1,7 +1,6 @@
 import Image from 'next/image'
 
 import { getLotteryAnalysisData } from '@/lib/redis'
-import { formatDate } from '@/lib/date'
 
 export const revalidate = 43200; // 12 hours
 export const dynamic = 'force-static';
@@ -153,7 +152,10 @@ export default async function Home() {
                         </div>
                         
                         <p className="text-lg text-gray-600 mt-8">
-                            Datos analizados hasta el {formatDate(lotteryData.last_updated)}.
+                            Datos analizados hasta el {new Intl.DateTimeFormat('es-PA', {
+                                dateStyle: 'full',
+                                timeStyle: 'short'
+                            }).format(new Date(lotteryData.last_updated))}
                         </p>
                     </div>
                 </section>
