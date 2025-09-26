@@ -154,7 +154,8 @@ export default async function Home() {
                         <p className="text-lg text-gray-600 mt-8">
                             Datos analizados hasta el {new Intl.DateTimeFormat('es-PA', {
                                 dateStyle: 'full',
-                                timeStyle: 'short'
+                                timeStyle: 'short',
+                                timeZone: 'America/Panama'
                             }).format(new Date(lotteryData.last_updated))}
                         </p>
                     </div>
